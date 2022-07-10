@@ -755,13 +755,29 @@ select{
   bottom: 8rem;
 }
 
+.float-left{
+  float: left;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -784,6 +800,14 @@ select{
   height: 4rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
 .w-20{
   width: 5rem;
 }
@@ -800,12 +824,26 @@ select{
   width: 4rem;
 }
 
-.cursor-move{
-  cursor: move;
+.w-4{
+  width: 1rem;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.cursor-move{
+  cursor: move;
+}
+
+.appearance-none{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .flex-row{
@@ -828,20 +866,33 @@ select{
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
-}
-
-.justify-evenly{
-  justify-content: space-evenly;
+.self-center{
+  align-self: center;
 }
 
 .rounded-lg{
   border-radius: 0.5rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
 .border-b{
   border-bottom-width: 1px;
+}
+
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .bg-brightBlue{
@@ -883,8 +934,26 @@ select{
   background-image: url('../images/bg-desktop-light.jpg');
 }
 
+.from-fromLinearGradient{
+  --tw-gradient-from: hsl(192, 100%, 67%);
+  --tw-gradient-to: hsl(192 100% 67% / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-toLinearGradient{
+  --tw-gradient-to: hsl(280, 87%, 65%);
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-no-repeat{
@@ -909,11 +978,6 @@ select{
   padding-bottom: 0.75rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -935,13 +999,12 @@ select{
   text-align: center;
 }
 
-.font-JosefinSans{
-  font-family: Josefin Sans, sans-serif;
+.align-top{
+  vertical-align: top;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.font-JosefinSans{
+  font-family: Josefin Sans, sans-serif;
 }
 
 .text-5xl{
@@ -954,9 +1017,26 @@ select{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-800{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .drop-shadow-xl{
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 body {
@@ -969,6 +1049,25 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.checked\:border-blue-600:checked{
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+}
+
+.checked\:bg-blue-600:checked{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.checked\:bg-gradient-to-r:checked{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .dark .dark\:h-10{

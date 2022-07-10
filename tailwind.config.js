@@ -26,7 +26,9 @@ module.exports = {
         lightGrayishBlueHoverDt: 'hsl(236, 33%, 92%)',
         darkGrayishBlueDt: 'hsl(234, 11%, 52%)',
         veryDarkGrayishBlueDt: 'hsl(233, 14%, 35%)',
-        veryDarkGrayishBlueDt1: 'hsl(237, 14%, 26%)'
+        veryDarkGrayishBlueDt1: 'hsl(237, 14%, 26%)',
+        fromLinearGradient: 'hsl(192, 100%, 67%)',
+        toLinearGradient: 'hsl(280, 87%, 65%)'
       },
       backgroundImage: {
         'hero': "url('../images/bg-desktop-light.jpg')",
